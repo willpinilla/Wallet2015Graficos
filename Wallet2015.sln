@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletPresentacion", "WalletPresentacion\WalletPresentacion.csproj", "{7C9AA21F-E8B7-41AC-8433-0D7FBE1A04ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletLogica", "WalletLogica\WalletLogica.csproj", "{2F62E112-AA0A-4212-8613-AA8839BCF4BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletEntidades", "WalletEntidades\WalletEntidades.csproj", "{C83D429A-71D2-457A-AD18-4F713590572A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WalletDatos", "WalletDatos\WalletDatos.csproj", "{F945425A-759B-4A5A-84FB-70A4F822B5B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C9AA21F-E8B7-41AC-8433-0D7FBE1A04ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9AA21F-E8B7-41AC-8433-0D7FBE1A04ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9AA21F-E8B7-41AC-8433-0D7FBE1A04ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9AA21F-E8B7-41AC-8433-0D7FBE1A04ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F62E112-AA0A-4212-8613-AA8839BCF4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F62E112-AA0A-4212-8613-AA8839BCF4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F62E112-AA0A-4212-8613-AA8839BCF4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F62E112-AA0A-4212-8613-AA8839BCF4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83D429A-71D2-457A-AD18-4F713590572A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83D429A-71D2-457A-AD18-4F713590572A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83D429A-71D2-457A-AD18-4F713590572A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83D429A-71D2-457A-AD18-4F713590572A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F945425A-759B-4A5A-84FB-70A4F822B5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F945425A-759B-4A5A-84FB-70A4F822B5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F945425A-759B-4A5A-84FB-70A4F822B5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F945425A-759B-4A5A-84FB-70A4F822B5B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
