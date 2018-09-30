@@ -47,6 +47,8 @@
             this.dgvCategorias = new System.Windows.Forms.DataGridView();
             this.tabMovimientos = new System.Windows.Forms.TabPage();
             this.grbDatosMovimientoMOV = new System.Windows.Forms.GroupBox();
+            this.cmbCuentasDestinoMOV = new System.Windows.Forms.ComboBox();
+            this.lblCuentaDestinoMOV = new System.Windows.Forms.Label();
             this.lblDescripcionMOV = new System.Windows.Forms.Label();
             this.txtDescripcionMOV = new System.Windows.Forms.TextBox();
             this.cmbCategoriasMOV = new System.Windows.Forms.ComboBox();
@@ -61,9 +63,12 @@
             this.dgvMovimientosMOV = new System.Windows.Forms.DataGridView();
             this.btnNuevoMovimientoMOV = new System.Windows.Forms.Button();
             this.tabReportes = new System.Windows.Forms.TabPage();
-            this.cmbCuentasDestinoMOV = new System.Windows.Forms.ComboBox();
-            this.lblCuentaDestinoMOV = new System.Windows.Forms.Label();
+            this.dgvConsultaMovimientos = new System.Windows.Forms.DataGridView();
             this.grbConsultaMovimientos = new System.Windows.Forms.GroupBox();
+            this.dtpFechaFinConsulta = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaFinalConsulta = new System.Windows.Forms.Label();
+            this.dtpFechaInicioConsulta = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaInicioConsulta = new System.Windows.Forms.Label();
             this.cmbCategoriasConsulta = new System.Windows.Forms.ComboBox();
             this.lblCategoriaConsulta = new System.Windows.Forms.Label();
             this.cmbCuentasConsulta = new System.Windows.Forms.ComboBox();
@@ -71,11 +76,20 @@
             this.cmbTiposMovimientoConsulta = new System.Windows.Forms.ComboBox();
             this.lblTiposMovimientoConsulta = new System.Windows.Forms.Label();
             this.btnConsulta = new System.Windows.Forms.Button();
-            this.dgvConsultaMovimientos = new System.Windows.Forms.DataGridView();
-            this.lblFechaInicioConsulta = new System.Windows.Forms.Label();
-            this.dtpFechaInicioConsulta = new System.Windows.Forms.DateTimePicker();
-            this.dtpFechaFinConsulta = new System.Windows.Forms.DateTimePicker();
-            this.lblFechaFinalConsulta = new System.Windows.Forms.Label();
+            this.tabGraficoIngresosGastos = new System.Windows.Forms.TabPage();
+            this.cmbAnoIngresosGastos = new System.Windows.Forms.ComboBox();
+            this.cmbMesIngresosGastos = new System.Windows.Forms.ComboBox();
+            this.lblMesIngresosGastos = new System.Windows.Forms.Label();
+            this.lblAnoIngresosGastps = new System.Windows.Forms.Label();
+            this.grbBusquedaIngresosGastos = new System.Windows.Forms.GroupBox();
+            this.btnDibujarIngresosGastos = new System.Windows.Forms.Button();
+            this.tabGraficoGastos = new System.Windows.Forms.TabPage();
+            this.grbBusquedaGastos = new System.Windows.Forms.GroupBox();
+            this.btnDibujarGastos = new System.Windows.Forms.Button();
+            this.cmbMesConsultaGastos = new System.Windows.Forms.ComboBox();
+            this.lblAnoConsultaGastos = new System.Windows.Forms.Label();
+            this.cmbAnoConsultaGastos = new System.Windows.Forms.ComboBox();
+            this.lblMesConsultaGastos = new System.Windows.Forms.Label();
             this.tabHome.SuspendLayout();
             this.tabCuentas.SuspendLayout();
             this.grbNuevaCuenta.SuspendLayout();
@@ -87,8 +101,12 @@
             this.grbDatosMovimientoMOV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovimientosMOV)).BeginInit();
             this.tabReportes.SuspendLayout();
-            this.grbConsultaMovimientos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaMovimientos)).BeginInit();
+            this.grbConsultaMovimientos.SuspendLayout();
+            this.tabGraficoIngresosGastos.SuspendLayout();
+            this.grbBusquedaIngresosGastos.SuspendLayout();
+            this.tabGraficoGastos.SuspendLayout();
+            this.grbBusquedaGastos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabHome
@@ -97,6 +115,8 @@
             this.tabHome.Controls.Add(this.tabCategorias);
             this.tabHome.Controls.Add(this.tabMovimientos);
             this.tabHome.Controls.Add(this.tabReportes);
+            this.tabHome.Controls.Add(this.tabGraficoIngresosGastos);
+            this.tabHome.Controls.Add(this.tabGraficoGastos);
             this.tabHome.Location = new System.Drawing.Point(12, 12);
             this.tabHome.Name = "tabHome";
             this.tabHome.SelectedIndex = 0;
@@ -304,6 +324,25 @@
             this.grbDatosMovimientoMOV.Text = "Datos Categoria";
             this.grbDatosMovimientoMOV.Visible = false;
             // 
+            // cmbCuentasDestinoMOV
+            // 
+            this.cmbCuentasDestinoMOV.FormattingEnabled = true;
+            this.cmbCuentasDestinoMOV.Location = new System.Drawing.Point(359, 88);
+            this.cmbCuentasDestinoMOV.Name = "cmbCuentasDestinoMOV";
+            this.cmbCuentasDestinoMOV.Size = new System.Drawing.Size(121, 21);
+            this.cmbCuentasDestinoMOV.TabIndex = 13;
+            this.cmbCuentasDestinoMOV.Visible = false;
+            // 
+            // lblCuentaDestinoMOV
+            // 
+            this.lblCuentaDestinoMOV.AutoSize = true;
+            this.lblCuentaDestinoMOV.Location = new System.Drawing.Point(273, 93);
+            this.lblCuentaDestinoMOV.Name = "lblCuentaDestinoMOV";
+            this.lblCuentaDestinoMOV.Size = new System.Drawing.Size(80, 13);
+            this.lblCuentaDestinoMOV.TabIndex = 12;
+            this.lblCuentaDestinoMOV.Text = "Cuenta Destino";
+            this.lblCuentaDestinoMOV.Visible = false;
+            // 
             // lblDescripcionMOV
             // 
             this.lblDescripcionMOV.AutoSize = true;
@@ -430,24 +469,16 @@
             this.tabReportes.Text = "Reporte";
             this.tabReportes.UseVisualStyleBackColor = true;
             // 
-            // cmbCuentasDestinoMOV
+            // dgvConsultaMovimientos
             // 
-            this.cmbCuentasDestinoMOV.FormattingEnabled = true;
-            this.cmbCuentasDestinoMOV.Location = new System.Drawing.Point(359, 88);
-            this.cmbCuentasDestinoMOV.Name = "cmbCuentasDestinoMOV";
-            this.cmbCuentasDestinoMOV.Size = new System.Drawing.Size(121, 21);
-            this.cmbCuentasDestinoMOV.TabIndex = 13;
-            this.cmbCuentasDestinoMOV.Visible = false;
-            // 
-            // lblCuentaDestinoMOV
-            // 
-            this.lblCuentaDestinoMOV.AutoSize = true;
-            this.lblCuentaDestinoMOV.Location = new System.Drawing.Point(273, 93);
-            this.lblCuentaDestinoMOV.Name = "lblCuentaDestinoMOV";
-            this.lblCuentaDestinoMOV.Size = new System.Drawing.Size(80, 13);
-            this.lblCuentaDestinoMOV.TabIndex = 12;
-            this.lblCuentaDestinoMOV.Text = "Cuenta Destino";
-            this.lblCuentaDestinoMOV.Visible = false;
+            this.dgvConsultaMovimientos.AllowUserToAddRows = false;
+            this.dgvConsultaMovimientos.AllowUserToDeleteRows = false;
+            this.dgvConsultaMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsultaMovimientos.Location = new System.Drawing.Point(26, 171);
+            this.dgvConsultaMovimientos.Name = "dgvConsultaMovimientos";
+            this.dgvConsultaMovimientos.ReadOnly = true;
+            this.dgvConsultaMovimientos.Size = new System.Drawing.Size(676, 214);
+            this.dgvConsultaMovimientos.TabIndex = 7;
             // 
             // grbConsultaMovimientos
             // 
@@ -468,6 +499,38 @@
             this.grbConsultaMovimientos.TabIndex = 9;
             this.grbConsultaMovimientos.TabStop = false;
             this.grbConsultaMovimientos.Text = "Consulta Movimientos";
+            // 
+            // dtpFechaFinConsulta
+            // 
+            this.dtpFechaFinConsulta.Location = new System.Drawing.Point(428, 65);
+            this.dtpFechaFinConsulta.Name = "dtpFechaFinConsulta";
+            this.dtpFechaFinConsulta.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaFinConsulta.TabIndex = 13;
+            // 
+            // lblFechaFinalConsulta
+            // 
+            this.lblFechaFinalConsulta.AutoSize = true;
+            this.lblFechaFinalConsulta.Location = new System.Drawing.Point(376, 67);
+            this.lblFechaFinalConsulta.Name = "lblFechaFinalConsulta";
+            this.lblFechaFinalConsulta.Size = new System.Drawing.Size(35, 13);
+            this.lblFechaFinalConsulta.TabIndex = 12;
+            this.lblFechaFinalConsulta.Text = "Hasta";
+            // 
+            // dtpFechaInicioConsulta
+            // 
+            this.dtpFechaInicioConsulta.Location = new System.Drawing.Point(128, 65);
+            this.dtpFechaInicioConsulta.Name = "dtpFechaInicioConsulta";
+            this.dtpFechaInicioConsulta.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaInicioConsulta.TabIndex = 11;
+            // 
+            // lblFechaInicioConsulta
+            // 
+            this.lblFechaInicioConsulta.AutoSize = true;
+            this.lblFechaInicioConsulta.Location = new System.Drawing.Point(67, 67);
+            this.lblFechaInicioConsulta.Name = "lblFechaInicioConsulta";
+            this.lblFechaInicioConsulta.Size = new System.Drawing.Size(38, 13);
+            this.lblFechaInicioConsulta.TabIndex = 10;
+            this.lblFechaInicioConsulta.Text = "Desde";
             // 
             // cmbCategoriasConsulta
             // 
@@ -531,48 +594,180 @@
             this.btnConsulta.UseVisualStyleBackColor = true;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
-            // dgvConsultaMovimientos
+            // tabGraficoIngresosGastos
             // 
-            this.dgvConsultaMovimientos.AllowUserToAddRows = false;
-            this.dgvConsultaMovimientos.AllowUserToDeleteRows = false;
-            this.dgvConsultaMovimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaMovimientos.Location = new System.Drawing.Point(26, 171);
-            this.dgvConsultaMovimientos.Name = "dgvConsultaMovimientos";
-            this.dgvConsultaMovimientos.ReadOnly = true;
-            this.dgvConsultaMovimientos.Size = new System.Drawing.Size(676, 214);
-            this.dgvConsultaMovimientos.TabIndex = 7;
+            this.tabGraficoIngresosGastos.Controls.Add(this.grbBusquedaIngresosGastos);
+            this.tabGraficoIngresosGastos.Location = new System.Drawing.Point(4, 22);
+            this.tabGraficoIngresosGastos.Name = "tabGraficoIngresosGastos";
+            this.tabGraficoIngresosGastos.Size = new System.Drawing.Size(739, 445);
+            this.tabGraficoIngresosGastos.TabIndex = 4;
+            this.tabGraficoIngresosGastos.Text = "Grafico Ingresos Gastos";
+            this.tabGraficoIngresosGastos.UseVisualStyleBackColor = true;
             // 
-            // lblFechaInicioConsulta
+            // cmbAnoIngresosGastos
             // 
-            this.lblFechaInicioConsulta.AutoSize = true;
-            this.lblFechaInicioConsulta.Location = new System.Drawing.Point(67, 67);
-            this.lblFechaInicioConsulta.Name = "lblFechaInicioConsulta";
-            this.lblFechaInicioConsulta.Size = new System.Drawing.Size(38, 13);
-            this.lblFechaInicioConsulta.TabIndex = 10;
-            this.lblFechaInicioConsulta.Text = "Desde";
+            this.cmbAnoIngresosGastos.FormattingEnabled = true;
+            this.cmbAnoIngresosGastos.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016"});
+            this.cmbAnoIngresosGastos.Location = new System.Drawing.Point(63, 26);
+            this.cmbAnoIngresosGastos.Name = "cmbAnoIngresosGastos";
+            this.cmbAnoIngresosGastos.Size = new System.Drawing.Size(84, 21);
+            this.cmbAnoIngresosGastos.TabIndex = 0;
             // 
-            // dtpFechaInicioConsulta
+            // cmbMesIngresosGastos
             // 
-            this.dtpFechaInicioConsulta.Location = new System.Drawing.Point(128, 65);
-            this.dtpFechaInicioConsulta.Name = "dtpFechaInicioConsulta";
-            this.dtpFechaInicioConsulta.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaInicioConsulta.TabIndex = 11;
+            this.cmbMesIngresosGastos.FormattingEnabled = true;
+            this.cmbMesIngresosGastos.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.cmbMesIngresosGastos.Location = new System.Drawing.Point(211, 26);
+            this.cmbMesIngresosGastos.Name = "cmbMesIngresosGastos";
+            this.cmbMesIngresosGastos.Size = new System.Drawing.Size(121, 21);
+            this.cmbMesIngresosGastos.TabIndex = 1;
             // 
-            // dtpFechaFinConsulta
+            // lblMesIngresosGastos
             // 
-            this.dtpFechaFinConsulta.Location = new System.Drawing.Point(428, 65);
-            this.dtpFechaFinConsulta.Name = "dtpFechaFinConsulta";
-            this.dtpFechaFinConsulta.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaFinConsulta.TabIndex = 13;
+            this.lblMesIngresosGastos.AutoSize = true;
+            this.lblMesIngresosGastos.Location = new System.Drawing.Point(178, 34);
+            this.lblMesIngresosGastos.Name = "lblMesIngresosGastos";
+            this.lblMesIngresosGastos.Size = new System.Drawing.Size(27, 13);
+            this.lblMesIngresosGastos.TabIndex = 2;
+            this.lblMesIngresosGastos.Text = "Mes";
             // 
-            // lblFechaFinalConsulta
+            // lblAnoIngresosGastps
             // 
-            this.lblFechaFinalConsulta.AutoSize = true;
-            this.lblFechaFinalConsulta.Location = new System.Drawing.Point(376, 67);
-            this.lblFechaFinalConsulta.Name = "lblFechaFinalConsulta";
-            this.lblFechaFinalConsulta.Size = new System.Drawing.Size(35, 13);
-            this.lblFechaFinalConsulta.TabIndex = 12;
-            this.lblFechaFinalConsulta.Text = "Hasta";
+            this.lblAnoIngresosGastps.AutoSize = true;
+            this.lblAnoIngresosGastps.Location = new System.Drawing.Point(21, 34);
+            this.lblAnoIngresosGastps.Name = "lblAnoIngresosGastps";
+            this.lblAnoIngresosGastps.Size = new System.Drawing.Size(26, 13);
+            this.lblAnoIngresosGastps.TabIndex = 3;
+            this.lblAnoIngresosGastps.Text = "Año";
+            // 
+            // grbBusquedaIngresosGastos
+            // 
+            this.grbBusquedaIngresosGastos.Controls.Add(this.btnDibujarIngresosGastos);
+            this.grbBusquedaIngresosGastos.Controls.Add(this.cmbMesIngresosGastos);
+            this.grbBusquedaIngresosGastos.Controls.Add(this.lblAnoIngresosGastps);
+            this.grbBusquedaIngresosGastos.Controls.Add(this.cmbAnoIngresosGastos);
+            this.grbBusquedaIngresosGastos.Controls.Add(this.lblMesIngresosGastos);
+            this.grbBusquedaIngresosGastos.Location = new System.Drawing.Point(142, 13);
+            this.grbBusquedaIngresosGastos.Name = "grbBusquedaIngresosGastos";
+            this.grbBusquedaIngresosGastos.Size = new System.Drawing.Size(456, 76);
+            this.grbBusquedaIngresosGastos.TabIndex = 4;
+            this.grbBusquedaIngresosGastos.TabStop = false;
+            this.grbBusquedaIngresosGastos.Text = "Búsqueda";
+            // 
+            // btnDibujarIngresosGastos
+            // 
+            this.btnDibujarIngresosGastos.Location = new System.Drawing.Point(350, 24);
+            this.btnDibujarIngresosGastos.Name = "btnDibujarIngresosGastos";
+            this.btnDibujarIngresosGastos.Size = new System.Drawing.Size(90, 32);
+            this.btnDibujarIngresosGastos.TabIndex = 4;
+            this.btnDibujarIngresosGastos.Text = "Dibujar";
+            this.btnDibujarIngresosGastos.UseVisualStyleBackColor = true;
+            this.btnDibujarIngresosGastos.Click += new System.EventHandler(this.btnDibujarIngresosGastos_Click);
+            // 
+            // tabGraficoGastos
+            // 
+            this.tabGraficoGastos.Controls.Add(this.grbBusquedaGastos);
+            this.tabGraficoGastos.Location = new System.Drawing.Point(4, 22);
+            this.tabGraficoGastos.Name = "tabGraficoGastos";
+            this.tabGraficoGastos.Padding = new System.Windows.Forms.Padding(3);
+            this.tabGraficoGastos.Size = new System.Drawing.Size(739, 445);
+            this.tabGraficoGastos.TabIndex = 5;
+            this.tabGraficoGastos.Text = "Grafico Gastos";
+            this.tabGraficoGastos.UseVisualStyleBackColor = true;
+            // 
+            // grbBusquedaGastos
+            // 
+            this.grbBusquedaGastos.Controls.Add(this.btnDibujarGastos);
+            this.grbBusquedaGastos.Controls.Add(this.cmbMesConsultaGastos);
+            this.grbBusquedaGastos.Controls.Add(this.lblAnoConsultaGastos);
+            this.grbBusquedaGastos.Controls.Add(this.cmbAnoConsultaGastos);
+            this.grbBusquedaGastos.Controls.Add(this.lblMesConsultaGastos);
+            this.grbBusquedaGastos.Location = new System.Drawing.Point(131, 13);
+            this.grbBusquedaGastos.Name = "grbBusquedaGastos";
+            this.grbBusquedaGastos.Size = new System.Drawing.Size(456, 76);
+            this.grbBusquedaGastos.TabIndex = 5;
+            this.grbBusquedaGastos.TabStop = false;
+            this.grbBusquedaGastos.Text = "Búsqueda";
+            // 
+            // btnDibujarGastos
+            // 
+            this.btnDibujarGastos.Location = new System.Drawing.Point(350, 24);
+            this.btnDibujarGastos.Name = "btnDibujarGastos";
+            this.btnDibujarGastos.Size = new System.Drawing.Size(90, 32);
+            this.btnDibujarGastos.TabIndex = 4;
+            this.btnDibujarGastos.Text = "Dibujar";
+            this.btnDibujarGastos.UseVisualStyleBackColor = true;
+            this.btnDibujarGastos.Click += new System.EventHandler(this.btnDibujarGastos_Click);
+            // 
+            // cmbMesConsultaGastos
+            // 
+            this.cmbMesConsultaGastos.FormattingEnabled = true;
+            this.cmbMesConsultaGastos.Items.AddRange(new object[] {
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+            "Julio",
+            "Agosto",
+            "Septiembre",
+            "Octubre",
+            "Noviembre",
+            "Diciembre"});
+            this.cmbMesConsultaGastos.Location = new System.Drawing.Point(211, 26);
+            this.cmbMesConsultaGastos.Name = "cmbMesConsultaGastos";
+            this.cmbMesConsultaGastos.Size = new System.Drawing.Size(121, 21);
+            this.cmbMesConsultaGastos.TabIndex = 1;
+            // 
+            // lblAnoConsultaGastos
+            // 
+            this.lblAnoConsultaGastos.AutoSize = true;
+            this.lblAnoConsultaGastos.Location = new System.Drawing.Point(21, 34);
+            this.lblAnoConsultaGastos.Name = "lblAnoConsultaGastos";
+            this.lblAnoConsultaGastos.Size = new System.Drawing.Size(26, 13);
+            this.lblAnoConsultaGastos.TabIndex = 3;
+            this.lblAnoConsultaGastos.Text = "Año";
+            // 
+            // cmbAnoConsultaGastos
+            // 
+            this.cmbAnoConsultaGastos.FormattingEnabled = true;
+            this.cmbAnoConsultaGastos.Items.AddRange(new object[] {
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016"});
+            this.cmbAnoConsultaGastos.Location = new System.Drawing.Point(63, 26);
+            this.cmbAnoConsultaGastos.Name = "cmbAnoConsultaGastos";
+            this.cmbAnoConsultaGastos.Size = new System.Drawing.Size(84, 21);
+            this.cmbAnoConsultaGastos.TabIndex = 0;
+            // 
+            // lblMesConsultaGastos
+            // 
+            this.lblMesConsultaGastos.AutoSize = true;
+            this.lblMesConsultaGastos.Location = new System.Drawing.Point(178, 34);
+            this.lblMesConsultaGastos.Name = "lblMesConsultaGastos";
+            this.lblMesConsultaGastos.Size = new System.Drawing.Size(27, 13);
+            this.lblMesConsultaGastos.TabIndex = 2;
+            this.lblMesConsultaGastos.Text = "Mes";
             // 
             // VistaWallet
             // 
@@ -597,9 +792,15 @@
             this.grbDatosMovimientoMOV.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMovimientosMOV)).EndInit();
             this.tabReportes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaMovimientos)).EndInit();
             this.grbConsultaMovimientos.ResumeLayout(false);
             this.grbConsultaMovimientos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaMovimientos)).EndInit();
+            this.tabGraficoIngresosGastos.ResumeLayout(false);
+            this.grbBusquedaIngresosGastos.ResumeLayout(false);
+            this.grbBusquedaIngresosGastos.PerformLayout();
+            this.tabGraficoGastos.ResumeLayout(false);
+            this.grbBusquedaGastos.ResumeLayout(false);
+            this.grbBusquedaGastos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -654,5 +855,19 @@
         private System.Windows.Forms.ComboBox cmbTiposMovimientoConsulta;
         private System.Windows.Forms.Label lblTiposMovimientoConsulta;
         private System.Windows.Forms.Button btnConsulta;
+        private System.Windows.Forms.TabPage tabGraficoIngresosGastos;
+        private System.Windows.Forms.GroupBox grbBusquedaIngresosGastos;
+        private System.Windows.Forms.Button btnDibujarIngresosGastos;
+        private System.Windows.Forms.ComboBox cmbMesIngresosGastos;
+        private System.Windows.Forms.Label lblAnoIngresosGastps;
+        private System.Windows.Forms.ComboBox cmbAnoIngresosGastos;
+        private System.Windows.Forms.Label lblMesIngresosGastos;
+        private System.Windows.Forms.TabPage tabGraficoGastos;
+        private System.Windows.Forms.GroupBox grbBusquedaGastos;
+        private System.Windows.Forms.Button btnDibujarGastos;
+        private System.Windows.Forms.ComboBox cmbMesConsultaGastos;
+        private System.Windows.Forms.Label lblAnoConsultaGastos;
+        private System.Windows.Forms.ComboBox cmbAnoConsultaGastos;
+        private System.Windows.Forms.Label lblMesConsultaGastos;
     }
 }

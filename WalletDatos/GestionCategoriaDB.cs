@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WalletEntidades;
 using Microsoft.Practices.EnterpriseLibrary.Data;
 using System.Data.Common;
 using System.Data;
+
 
 namespace WalletDatos
 {

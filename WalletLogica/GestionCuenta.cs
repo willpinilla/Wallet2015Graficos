@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WalletDatos;
-using WalletEntidades;
 
 namespace WalletLogica
 {
@@ -24,12 +23,30 @@ namespace WalletLogica
 
         public void GuardarCuenta(Cuenta cuenta)
         {
-            getGestionCuentaDB().GuardarCuentaDB(cuenta);
+            WalletDatos.Cuenta CuentaDB = new WalletDatos.Cuenta()
+            {
+                Id = cuenta.Id,
+                Nombre = cuenta.Nombre,
+                FechaCreacion = cuenta.FechaCreacion
+            };
+            getGestionCuentaDB().GuardarCuentaDB(CuentaDB);
         }
 
         public List<Cuenta> GetCuentas ()
         {
-            List<Cuenta> listaCuentas = getGestionCuentaDB().GetCuentasDB();
+            List<WalletDatos.Cuenta> listaCuentasDB = getGestionCuentaDB().GetCuentasDB();
+            List<Cuenta> listaCuentas = new List<Cuenta>();
+            foreach (var item in listaCuentasDB)
+            {
+                Cuenta ct = new Cuenta()
+                {
+                    Id = item.Id,
+                    Nombre = item.Nombre,
+                    FechaCreacion = item.FechaCreacion
+                };
+                listaCuentas.Add(ct);
+            }
+
             return listaCuentas;
         }
 

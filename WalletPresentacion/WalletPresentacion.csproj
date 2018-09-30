@@ -46,11 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controlador\ReporteControlador.cs" />
-    <Compile Include="Controlador\MovimientoControlador.cs" />
-    <Compile Include="Controlador\TipoMovimientoControlador.cs" />
-    <Compile Include="Controlador\CategoriaControlador.cs" />
-    <Compile Include="Controlador\CuentaControlador.cs" />
+    <Compile Include="Modelo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\Conversiones.cs" />
@@ -86,10 +82,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WalletEntidades\WalletEntidades.csproj">
-      <Project>{c83d429a-71d2-457a-ad18-4f713590572a}</Project>
-      <Name>WalletEntidades</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WalletLogica\WalletLogica.csproj">
       <Project>{2f62e112-aa0a-4212-8613-aa8839bcf4bb}</Project>
       <Name>WalletLogica</Name>

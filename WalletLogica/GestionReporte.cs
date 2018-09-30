@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WalletDatos;
-using WalletEntidades;
 
 namespace WalletLogica
 {
@@ -24,7 +23,29 @@ namespace WalletLogica
 
         public List<ReporteResultados> GetReporte(ReporteParametros reporteparametros)
         {
-            List<ReporteResultados> listaReporteResultados = getGestionReporteDB().GetReporteDB(reporteparametros);
+            WalletDatos.ReporteParametros ReporteParametrosDB = new WalletDatos.ReporteParametros()
+            {
+                TipoMovimientoId = reporteparametros.TipoMovimientoId,
+                CategoriaId = reporteparametros.CategoriaId,
+                CuentaId = reporteparametros.CuentaId,
+                FechaInicio = reporteparametros.FechaInicio,
+                FechaFin = reporteparametros.FechaFin
+            };
+
+            List<WalletDatos.ReporteResultados> listaReporteResultadosDB = getGestionReporteDB().GetReporteDB(ReporteParametrosDB);
+            List<ReporteResultados> listaReporteResultados = new List<ReporteResultados>();
+            foreach (var item in listaReporteResultadosDB)
+            {
+                ReporteResultados rpt = new ReporteResultados()
+                {
+                   TipoMovimiento = item.TipoMovimiento,
+                   Categoria = item.Categoria,
+                   Cuenta = item.Cuenta,
+                   Valor = item.Valor
+                };
+                listaReporteResultados.Add(rpt);
+            }
+
             return listaReporteResultados;
         }
 

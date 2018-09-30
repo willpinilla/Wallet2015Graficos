@@ -45,16 +45,21 @@
     <Compile Include="GestionTipoMovimiento.cs" />
     <Compile Include="GestionCategoria.cs" />
     <Compile Include="GestionCuenta.cs" />
+    <Compile Include="Graphics\Barra.cs" />
+    <Compile Include="Graphics\Dimension.cs" />
+    <Compile Include="Graphics\GestionBarras.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Value Objects\Categoria.cs" />
+    <Compile Include="Value Objects\Cuenta.cs" />
+    <Compile Include="Value Objects\Movimiento.cs" />
+    <Compile Include="Value Objects\ReporteParametros.cs" />
+    <Compile Include="Value Objects\ReporteResultados.cs" />
+    <Compile Include="Value Objects\TipoMovimiento.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WalletDatos\WalletDatos.csproj">
       <Project>{f945425a-759b-4a5a-84fb-70a4f822b5b6}</Project>
       <Name>WalletDatos</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WalletEntidades\WalletEntidades.csproj">
-      <Project>{c83d429a-71d2-457a-ad18-4f713590572a}</Project>
-      <Name>WalletEntidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
